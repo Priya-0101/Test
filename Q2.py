@@ -8,7 +8,7 @@ def rev(text, i):
     
     return text[i] + rev(text, i-1)
 
-res = rev(text, len(text))
+res = rev(text, len(text)-1)
 
 if text == res:
     print("Palindrome")
